@@ -1,3 +1,1 @@
-export class Validation {
-
-}
+export class Validation {}
