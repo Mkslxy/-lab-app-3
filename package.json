@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack serve --open",
-    "lint": "eslint . --ext .ts,.js"
+    "lint": "eslint . --ext .ts,.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "html-webpack-plugin": "^5.6.4",
+    "husky": "^9.1.7",
     "prettier": "^3.6.2",
     "style-loader": "^4.0.0",
     "ts-loader": "^9.5.4",
