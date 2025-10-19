@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система управління бібліотекою</title>
+</head>
+<body>
+<div class="container my-5">
+    <h1 class="text-center mb-5">Система Управління Бібліотекою</h1>
+
+    <div class="row g-4 flex-column align-items-center">
+        <div class="col-md-6">
+            <div class="p-4 border rounded">
+                <h3 class="mb-3">Додати книгу</h3>
+                <form id="bookForm">
+                    <input type="text" id="bookTitle" class="form-control mb-3" placeholder="Назва книги">
+                    <input type="text" id="bookAuthor" class="form-control mb-3" placeholder="Автор">
+                    <input type="number" id="bookYear" class="form-control mb-3" placeholder="Рік видання">
+                    <button type="submit" class="btn btn-primary w-100">Додати книгу</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="p-4 border rounded">
+                <h3 class="mb-3">Додати користувача</h3>
+                <form id="userForm">
+                    <input type="text" id="userName" class="form-control mb-3" placeholder="Ім'я">
+                    <input type="email" id="userEmail" class="form-control mb-3" placeholder="Email">
+                    <button type="submit" class="btn btn-success w-100">Додати користувача</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-12 mt-4">
+            <h4>Список книг</h4>
+            <div id="booksList"></div>
+        </div>
+
+        <div class="col-12 mt-4">
+            <h4>Список користувачів</h4>
+            <div id="usersList"></div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="alertModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Повідомлення</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="alertModalBody"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Закрити</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
