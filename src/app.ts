@@ -27,7 +27,7 @@ class App {
     bookForm?.addEventListener('submit', (e) => {
       e.preventDefault();
       const title = (
-        document.querySelector<HTMLInputElement>('#bookTitle')!.value || ''
+        document.querySelector<HTMLInputElement>('#bookTitle')?.value || ''
       ).trim();
       const author = (
         document.querySelector<HTMLInputElement>('#bookAuthor')!.value || ''
